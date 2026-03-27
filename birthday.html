@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Shivuu ❤️</title>
+<style>
+body {
+    margin:0;
+    font-family: Arial;
+    background:black;
+    color:white;
+    text-align:center;
+    overflow:hidden;
+}
+.page {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:100%;
+    padding:30px;
+    transition:0.6s;
+}
+.active { left:0; }
+h1,h2 { color:#ff4d6d; }
+button {
+    padding:10px 18px;
+    margin:10px;
+    border:none;
+    border-radius:20px;
+    background:#ff4d6d;
+    color:white;
+}
+.popup {
+    display:none;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:#111;
+    padding:20px;
+    border-radius:15px;
+}
+.big-love {
+    font-size:40px;
+    color:#ff4d6d;
+    animation: glow 1s infinite alternate;
+}
+@keyframes glow {
+    from { text-shadow:0 0 10px #ff4d6d; }
+    to { text-shadow:0 0 30px #ff1e4d; }
+}
+.heart, .confetti {
+    position:fixed;
+    top:-10px;
+    animation:fall linear infinite;
+}
+@keyframes fall {
+    to { transform:translateY(100vh); }
+}
+</style>
+</head>
+<body>
+
+<!-- PAGE 1: Welcome -->
+<div id="p1" class="page active">
+<h1>Happy Birthday Shivuu ❤️</h1>
+<p>Ready for something special? 🎂</p>
+<button onclick="go(2)">Start 🎁</button>
+</div>
+
+<!-- PAGE 2: Surprise 1 -->
+<div id="p2" class="page">
+<h2>Surprise 1 🎁</h2>
+<p>You are my happiest place 💖</p>
+<button onclick="go(3)">Next Surprise →</button>
+</div>
+
+<!-- PAGE 3: Surprise 2 -->
+<div id="p3" class="page">
+<h2>Surprise 2 💖</h2>
+<p>I’m lucky to have you Shivuu 🥺❤️</p>
+<button onclick="go(4)">Next Surprise →</button>
+</div>
+
+<!-- PAGE 4: Surprise 3 -->
+<div id="p4" class="page">
+<h2>Surprise 3 😘</h2>
+<p>Never leave me 😭💞</p>
+<button onclick="go(5)">Next Surprise →</button>
+</div>
+
+<!-- PAGE 5: Surprise 4 -->
+<div id="p5" class="page">
+<h2>Surprise 4 🥺</h2>
+<p>I LOVE YOU ❤️🔥</p>
+<button onclick="go(6)">Next 🔐</button>
+</div>
+
+<!-- PAGE 6: Password -->
+<div id="p6" class="page">
+<h2>Enter Password 💌</h2>
+<input type="password" id="pass"><br><br>
+<button onclick="check()">Unlock</button>
+</div>
+
+<!-- PAGE 7: Fake Ending -->
+<div id="p7" class="page">
+<h2>Bas itna hi tha... 💔</h2>
+<p>or maybe not... 😏</p>
+<button onclick="go(8)">Continue →</button>
+</div>
+
+<!-- PAGE 8: Love Burst -->
+<div id="p8" class="page">
+<h1 class="big-love">I LOVE YOU SHIVUU ❤️</h1>
+<button onclick="go(9)">Last thing 💌</button>
+</div>
+
+<!-- PAGE 9: Final Message -->
+<div id="p9" class="page">
+<h2>For My Shivuu ❤️</h2>
+<p id="msg"></p>
+</div>
+
+<div id="popup" class="popup"></div>
+
+<script>
+/* Navigation */
+function go(n){
+document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
+document.getElementById("p"+n).classList.add("active");
+}
+
+/* Password check */
+function check(){
+if(document.getElementById("pass").value==="chotababy"){
+go(7);
+confetti();
+}else{ alert("Wrong password 😝"); }
+}
+
+/* Full message typing effect */
+let text=`Heyyyu babbyyy... Happy Birthday mera sundaruuu sundaruu babbyy 💖
+
+Ab honestly don't even know where to start.... But kafi kuch bolna h tujhse but but but first of all, I just want you to know how special you are to me 🙂
+
+Pta nhi kaise bhai pr tu meri life ka vo important hissa ban chuka  jo m explain bhi nhi  kr sakti vo kehte h n bairan zindagi m rang bharne wala tu hi aur jb tu sath hota h n... Bs m chahti ki waqt vahi tham jye
+
+M har baar tere birthday  pe tujhe special feel krvana chahhti hu.. but at the in hamsha fail hi hoti us baar bhi kuch nhi kar payi tere liye but one day.. remember one day ek din asa laugi vaha tujhe tere birthday ki excitement hogi promise.. bs fail na ho jau 🙂
+
+Aur haa tu yr kafi special ho gya yr... Tu meri jo addition h jiske bina insaan pagal ho sakta h life proper pagal... Tere dur jane ka hi soch pe pagal ho jati vo toh bolti hu kabhi kabar vo pagal hoke hi bolti hu pr sach btau mujhe kabhi tujhse dur nhi jana kabhi bhi nhi aur ye sb sirf words nhi h ye dil se bol rhi❤️
+
+Aj tera Birthday h  
+M bs yehi chahti hu yr  ki bs tu hamsha khush rahee aur life mei vo sb mile jiski tujhe chahat ho
+
+Aur at the end I just want to say,
+Sorry har baar bina baat kr mood khrb kr deti kabhi kabhi overreact kr deti hu kabhi jada hurt kr deti hu
+
+Samjh nhi pati yr tujhe bs deeply mujhe samjhhnaa h tujhe jannna h tere bare m pehle jaise bs kabhi kabhi lgta h jaise m hi teri life m problems create kr deti hu sorry 🙂bs bs bs itna emotional nhi shut up lakshita aur aur aur
+
+Thannk you thank you sooo muchh 😚❤️ meri life m aane ke liye itna beautiful aur acha banne ke liye
+And thank you for staying with me
+
+Pr sach m tu kafii mtlb kafii kafi important h kabhi jaio mt yr thank you sooo muchh pta h thnku itna kafi nhi h  bs yr Thankk youu
+
+Khush rahe yr tu hamsha
+
+I love you sooooooo muchh shiiivvuuuu❤️🥺
+
+And
+
+Happyyyy birthday betiiiiyaa rani 🌹
+
+Teri lakshita/ your lakshita💌`;
+
+let i=0;
+function typeMsg(){
+let speed=25;
+function t(){
+if(i<text.length){
+document.getElementById("msg").innerHTML+=text.charAt(i);
+i++;
+setTimeout(t,speed);
+}}
+t();
+}
+document.getElementById("p9").addEventListener("click", typeMsg, {once:true});
+
+/* confetti */
+function confetti(){
+setInterval(()=>{
+let c=document.createElement("div");
+c.classList.add("confetti");
+c.innerHTML="🎉";
+c.style.left=Math.random()*100+"vw";
+c.style.animationDuration=(Math.random()*3+2)+"s";
+document.body.appendChild(c);
+setTimeout(()=>c.remove(),5000);
+},200);
+}
+
+/* hearts */
+setInterval(()=>{
+let h=document.createElement("div");
+h.classList.add("heart");
+h.innerHTML="💖";
+h.style.left=Math.random()*100+"vw";
+h.style.animationDuration=(Math.random()*3+2)+"s";
+document.body.appendChild(h);
+setTimeout(()=>h.remove(),5000);
+},300);
+</script>
+
+</body>
+</html>
